@@ -202,9 +202,17 @@ Variáveis de ambiente (**Environment**), com a URL pública e **sem barra no fi
 
 **Endereços publicados:**
 
-- Tutores: _a preencher_
-- Pets: _a preencher_
-- Veterinários: _a preencher_
-- Consultas: _a preencher_
+| Serviço | Endereço público | Health |
+|---|---|---|
+| Tutores | https://vetcare-tutores.onrender.com | [/api/health](https://vetcare-tutores.onrender.com/api/health) |
+| Pets | https://vetcare-pets.onrender.com | [/api/health](https://vetcare-pets.onrender.com/api/health) |
+| Veterinários | https://vetcare-veterinarios.onrender.com | [/api/health](https://vetcare-veterinarios.onrender.com/api/health) |
+| Consultas | https://vetcare-consultas.onrender.com | [/api/health](https://vetcare-consultas.onrender.com/api/health) |
+
+Para testar a versão publicada no Thunder Client, troque `http://127.0.0.1:500X` pelo endereço do serviço correspondente. Exemplos:
+
+- Integração 1: `GET https://vetcare-pets.onrender.com/api/pets/1`
+- Integrações 2 e 3: `POST https://vetcare-consultas.onrender.com/api/consultas`
+- Conferir o débito: `GET https://vetcare-tutores.onrender.com/api/tutores/1`
 
 Antes de demonstrar, chame `/api/health` de cada serviço para "acordar" os quatro. No plano gratuito eles hibernam depois de 15 minutos sem acesso.

@@ -1,0 +1,656 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "VetCare - Microsserviços",
+  "collectionId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+  "dateExported": "2026-11-23T21:00:00.000Z",
+  "version": "1.2",
+  "folders": [
+    {
+      "_id": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "1 - Tutores (5001)",
+      "containerId": "",
+      "created": "2026-11-23T21:00:00.000Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "2 - Pets (5002)",
+      "containerId": "",
+      "created": "2026-11-23T21:00:00.000Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "3 - Veterinários (5003)",
+      "containerId": "",
+      "created": "2026-11-23T21:00:00.000Z",
+      "sortNum": 30000
+    },
+    {
+      "_id": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "4 - Consultas (5004)",
+      "containerId": "",
+      "created": "2026-11-23T21:00:00.000Z",
+      "sortNum": 40000
+    },
+    {
+      "_id": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "5 - Integrações",
+      "containerId": "",
+      "created": "2026-11-23T21:00:00.000Z",
+      "sortNum": 50000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "dd1b2605-bae6-4259-a9f5-da075ca8e37e",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Health Tutores",
+      "url": "http://127.0.0.1:5001/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "5a5b9d61-b882-4484-87ff-ac49dc6941fc",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Listar tutores",
+      "url": "http://127.0.0.1:5001/api/tutores",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "353cc5d1-1ff2-44d3-8433-244474dfaee2",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Cadastrar tutor (Bruno)",
+      "url": "http://127.0.0.1:5001/api/tutores",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Bruno Lima\",\n  \"cpf\": \"222.333.444-55\",\n  \"telefone\": \"(48) 98888-2222\",\n  \"email\": \"bruno@exemplo.com\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "64b345d7-54df-44b5-95cf-2b1e81b14b92",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Buscar tutor 2",
+      "url": "http://127.0.0.1:5001/api/tutores/2",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "4932fd29-30ee-4847-9b5d-8eb934568531",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Editar tutor 2",
+      "url": "http://127.0.0.1:5001/api/tutores/2",
+      "method": "PUT",
+      "sortNum": 50000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Bruno Lima Jr\",\n  \"telefone\": \"(48) 98888-0000\",\n  \"email\": \"bruno@exemplo.com\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "a2937771-81b8-4daa-a224-8594aaeac6b8",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Cadastrar tutor CPF repetido (erro 400)",
+      "url": "http://127.0.0.1:5001/api/tutores",
+      "method": "POST",
+      "sortNum": 60000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Outro\",\n  \"cpf\": \"222.333.444-55\",\n  \"telefone\": \"(48) 97777-0000\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "9a9a4c6f-10e4-4866-9014-12d1fee94a38",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "645edb7a-4ec6-423e-aa8a-ccf39d0cfcfc",
+      "name": "Inativar tutor 2",
+      "url": "http://127.0.0.1:5001/api/tutores/2",
+      "method": "DELETE",
+      "sortNum": 70000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "e4292ba2-a654-4369-a6c4-5fe00793e3be",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Health Pets",
+      "url": "http://127.0.0.1:5002/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "1260b8d4-87a7-41a9-ba5c-bdabdb78765d",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Listar pets",
+      "url": "http://127.0.0.1:5002/api/pets",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "ad9de5c9-8db7-4315-9212-5657b3bf3ccb",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Cadastrar pet (Mia, tutor 1)",
+      "url": "http://127.0.0.1:5002/api/pets",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Mia\",\n  \"especie\": \"gato\",\n  \"raca\": \"Siamês\",\n  \"idade\": 2,\n  \"tutor_id\": 1\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "177a11b5-877c-473f-9ce2-cbc39b927b52",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Listar pets do tutor 1",
+      "url": "http://127.0.0.1:5002/api/pets?tutor_id=1",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "94f6f2af-814a-4908-a5af-0143dcaf58e8",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Buscar pet 2 (resumo)",
+      "url": "http://127.0.0.1:5002/api/pets/2/resumo",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "705ae31a-4958-4e2c-a3ec-1239a45699ad",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Editar pet 2",
+      "url": "http://127.0.0.1:5002/api/pets/2",
+      "method": "PUT",
+      "sortNum": 60000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Mia\",\n  \"especie\": \"gato\",\n  \"raca\": \"Siamês\",\n  \"idade\": 3\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "d1ecf917-b862-46d4-8ce5-911d2d99abd0",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "df241ca7-7082-421e-9add-86577922e4cc",
+      "name": "Inativar pet 2",
+      "url": "http://127.0.0.1:5002/api/pets/2",
+      "method": "DELETE",
+      "sortNum": 70000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "fd944695-0869-42b7-ae71-116096d63b4d",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Health Veterinários",
+      "url": "http://127.0.0.1:5003/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "54f41fed-4d96-4365-b8f6-17843025121e",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Listar veterinários",
+      "url": "http://127.0.0.1:5003/api/veterinarios",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "695d1677-c12d-4c70-aaa4-53904aa5495f",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Cadastrar veterinária (Paula)",
+      "url": "http://127.0.0.1:5003/api/veterinarios",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Dra. Paula Reis\",\n  \"crmv\": \"SC-54321\",\n  \"especialidade\": \"Dermatologia\",\n  \"valor_consulta\": 220\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "f3c7222c-4bed-4d88-842f-9af7574fcbf1",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Buscar veterinário 2",
+      "url": "http://127.0.0.1:5003/api/veterinarios/2",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "9f7c89b2-e9b9-4d93-9017-e8c82a61adce",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Editar veterinário 2",
+      "url": "http://127.0.0.1:5003/api/veterinarios/2",
+      "method": "PUT",
+      "sortNum": 50000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Dra. Paula Reis\",\n  \"especialidade\": \"Dermatologia\",\n  \"valor_consulta\": 250\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "69bc7ba9-8796-4015-b1c4-7e55c07aa55b",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "dff2f6d6-77d4-402c-9622-67402c3fe7ac",
+      "name": "Inativar veterinário 2",
+      "url": "http://127.0.0.1:5003/api/veterinarios/2",
+      "method": "DELETE",
+      "sortNum": 60000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "7675f1b7-6b27-4fef-9a45-ce12dec611a7",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "Health Consultas",
+      "url": "http://127.0.0.1:5004/api/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "a5033c30-7d90-487a-b4b6-e23efc7ccf9c",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "Listar consultas",
+      "url": "http://127.0.0.1:5004/api/consultas",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "cc198aca-cc39-4534-94be-9df0eea88914",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "Listar consultas do pet 1",
+      "url": "http://127.0.0.1:5004/api/consultas?pet_id=1",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "5fed0e79-ff05-42a9-a8c8-506bf4100cfd",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "Buscar consulta 1",
+      "url": "http://127.0.0.1:5004/api/consultas/1",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "f40d7bab-e60f-4b58-b318-d372a5ad201c",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "431f9f15-d537-4d0a-9d0d-c07d1bf028a3",
+      "name": "Remarcar consulta 1",
+      "url": "http://127.0.0.1:5004/api/consultas/1",
+      "method": "PUT",
+      "sortNum": 50000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"data_hora\": \"2026-11-26T10:00\",\n  \"motivo\": \"Vacina anual (remarcada)\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "32d95d98-e1b8-4909-af98-7cb1c6d0211b",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "I1 - BUSCA: pet 1 com dados do tutor (Pets -> Tutores)",
+      "url": "http://127.0.0.1:5002/api/pets/1",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "ff2c09ce-3ad2-48a0-a521-2db2d4be1828",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "I1 - BUSCA: cadastrar pet valida o tutor 99 (erro)",
+      "url": "http://127.0.0.1:5002/api/pets",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Rex\",\n  \"especie\": \"cachorro\",\n  \"tutor_id\": 99\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "70fcb5c7-be2a-43d5-b04c-4197bb287400",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "I2 + I3 - Agendar consulta (busca vet + lança débito)",
+      "url": "http://127.0.0.1:5004/api/consultas",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"pet_id\": 1,\n  \"veterinario_id\": 1,\n  \"data_hora\": \"2026-11-25T14:30\",\n  \"motivo\": \"Vacina anual\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "6b2ded17-b16a-4f5b-a120-189ecc3b9ef5",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "I3 - Conferir saldo devedor do tutor 1",
+      "url": "http://127.0.0.1:5001/api/tutores/1",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "b0139a45-ee3b-4210-9987-e08d0b450cda",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "I2 - Agendar com veterinário 99 (erro)",
+      "url": "http://127.0.0.1:5004/api/consultas",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"pet_id\": 1,\n  \"veterinario_id\": 99,\n  \"data_hora\": \"2026-11-25T15:00\",\n  \"motivo\": \"Teste\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "9e60062a-32b8-4d2b-93ee-10380d89f512",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "Cancelar consulta 1 (estorno no Tutores)",
+      "url": "http://127.0.0.1:5004/api/consultas/1/cancelar",
+      "method": "PATCH",
+      "sortNum": 60000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "4ffb6b0e-eb87-4070-916d-2c4ec7b6299c",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "Conferir estorno no tutor 1",
+      "url": "http://127.0.0.1:5001/api/tutores/1",
+      "method": "GET",
+      "sortNum": 70000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "d0cfc0ec-47c3-44b8-827a-9771af8e45af",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "FALHA - desligue o Tutores e agende (compensação)",
+      "url": "http://127.0.0.1:5004/api/consultas",
+      "method": "POST",
+      "sortNum": 80000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"pet_id\": 1,\n  \"veterinario_id\": 1,\n  \"data_hora\": \"2026-11-27T09:00\",\n  \"motivo\": \"Retorno\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "7b087ced-0654-4035-9c90-1540d4f8a0c9",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "FALHA - pet 1 com Tutores fora (aviso)",
+      "url": "http://127.0.0.1:5002/api/pets/1",
+      "method": "GET",
+      "sortNum": 90000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "ab12d462-c512-413f-9e79-c9e1f27b106b",
+      "colId": "f0951ab1-4ae4-49dd-a8d3-f978c9f27693",
+      "containerId": "61f0926f-bdc4-42fa-b244-d4a80119b425",
+      "name": "FALHA - conferir que a consulta não ficou gravada",
+      "url": "http://127.0.0.1:5004/api/consultas",
+      "method": "GET",
+      "sortNum": 100000,
+      "created": "2026-11-23T21:00:00.000Z",
+      "modified": "2026-11-23T21:00:00.000Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}

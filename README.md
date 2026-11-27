@@ -7,6 +7,28 @@ Back-end de uma clínica veterinária dividido em **quatro microsserviços** ind
 **Equipe:** Henrique Lucio Coral, Cauã Savi e José Victor
 **Turma:** Arquitetura de Software, Sexta (Noturno)
 
+### Links da entrega
+
+- **GitHub:** https://github.com/henriquecoral06/vetcare-microsservicos
+- **Render (serviços publicados):**
+  - Tutores: https://vetcare-tutores.onrender.com/api/health
+  - Pets: https://vetcare-pets.onrender.com/api/health
+  - Veterinários: https://vetcare-veterinarios.onrender.com/api/health
+  - Consultas: https://vetcare-consultas.onrender.com/api/health
+- **Coleção do Thunder Client:** `thunder-client-colecao.json`, com uma pasta "Integrações".
+
+No plano gratuito do Render, os serviços hibernam depois de 15 minutos sem uso. A primeira chamada pode levar cerca de 1 minuto para responder.
+
+### Participação da equipe
+
+O projeto foi desenvolvido em conjunto e presencialmente pelos três integrantes. Henrique escreveu o código enquanto o grupo discutia e decidia junto.
+
+| Integrante | Participação |
+|---|---|
+| **Henrique Lucio Coral** | Implementação dos serviços, integrações e publicação no Render. |
+| **Cauã Savi** | Definição do domínio e das integrações, revisão do serviço de Tutores e testes no Thunder Client. |
+| **José Victor** | Definição do domínio e das integrações, revisão do serviço de Pets e testes no Thunder Client. |
+
 ---
 
 ## 1. Documento de requisitos
